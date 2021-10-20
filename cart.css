@@ -1,0 +1,153 @@
+#cart_form_id {
+	display: none;
+	
+	position: fixed;
+	
+	z-index: 1;
+	
+	left: 0;
+	top: 0;
+	width: 100%;
+
+	height: 100%;
+	
+	overflow: auto;
+	
+	background-color: #474e5ddc;
+}
+
+.cart_form {
+	display: -ms-flexbox;
+	
+	display: flex;
+	-ms-flex-wrap: wrap;
+	
+	flex-wrap: wrap;
+	font-family: Arial;
+	font-size: 15px;
+	width: 95%;
+	height: fit-content;
+	justify-content: center;
+}
+
+.cart_form .col-75 {
+	-ms-flex: 70%;
+
+	flex: 70%;
+}
+
+.cart_form .col-25 {
+	-ms-flex: 30%;
+	
+	flex: 30%;
+}
+
+.cart_form .col-50 {
+	-ms-flex: 50%;
+
+	flex: 50%;
+}
+
+.cart_form .col-25,
+.cart_form .col-50,
+.cart_form .col-75 {
+	padding: 2px 16px;
+}
+
+.cart_form .container2 {
+	background-color: #f2f2f2;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+}
+
+.cart_form input[type='text'] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.cart_form label {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.cart_form .icon-container2 {
+	margin-bottom: 20px;
+	padding: 7px 0;
+	font-size: 24px;
+}
+
+.cart_form .btn {
+	background-color: #4caf50;
+	color: white;
+	padding: 12px;
+	margin: 10px 0;
+	border: none;
+	width: 100%;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+}
+
+.cart_form .btn:hover {
+	background-color: #45a049;
+}
+
+.cart_form a {
+	color: #2196f3;
+}
+
+.cart_form hr {
+	border: 1px solid lightgrey;
+}
+
+
+@media (max-width: 800px) {
+	.cart_form {
+		flex-direction: column-reverse;
+	}
+	.cart_form .col-25 {
+		margin-bottom: 20px;
+	}
+}
+
+
+#cart_form_id .close {
+	top: 0;
+	float: right;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+#cart_form_id .close:hover,
+#cart_form_id .close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+
+.cart_form span.price {
+	color: grey;
+}
+
+#cart_form_id span.delete {
+	color: #000;
+	font-size: 25px;
+	margin-right: 0px;
+}
+
+#cart_form_id span.delete:hover,
+#cart_form_id span.delete:focus {
+	color: red;
+	cursor: pointer;
+}
+
+#cart_form_id p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
